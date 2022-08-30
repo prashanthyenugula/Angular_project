@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "firstname": "Sita",
+      "lastname": "Ram",
+      "age": "51",
+      "id": 1
+    },
+    {
+      "firstname": "prashanth",
+      "lastname": "yenugula",
+      "age": 29,
+      "Gender": "Male",
+      "id": 2
+    },
+    {
+      "firstname": "y",
+      "lastname": "p",
+      "age": 23,
+      "Gender": "Male",
+      "id": 3
+    },
+    {
+      "firstname": "vinay",
+      "lastname": "y",
+      "age": 22,
+      "Gender": "Male",
+      "id": 4
+    }
+  ]
+}
