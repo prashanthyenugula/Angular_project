@@ -14,7 +14,6 @@ export class UserformComponent implements OnInit {
   
   users: User[] =[];
   
-
   save(){
     const observable = this.userService.createUser(this.user);
     observable.subscribe(
@@ -26,6 +25,22 @@ export class UserformComponent implements OnInit {
         alert("Something went wrong please try again!")
       }
      )
+  }
+
+  deleteRow(user, index) {
+    const observable = this.userService.deleteUser(user);
+    observable.subscribe((response:any) =>{
+      console.log(response);
+      this.users.splice(index,1)
+
+    })
+  }
+
+  sort(){
+    this.users.sort(function(user1,user2){
+      // return user1.age - user2.age
+      return user2.age - user1.age
+    })
   }
 
   constructor(public userService: UserService) { }

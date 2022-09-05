@@ -6,13 +6,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { UserformComponent } from './Components/userform/userform.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { AboutComponent } from './Components/about/about.component';
+import { PipedemoComponent } from './Components/pipedemo/pipedemo.component';
+import { EllipsisPipe } from './ellipsis.pipe';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    UserformComponent
+    UserformComponent,
+    AboutComponent,
+    PipedemoComponent,
+    EllipsisPipe,
+    
+   
   ],
   imports: [
     BrowserModule,
